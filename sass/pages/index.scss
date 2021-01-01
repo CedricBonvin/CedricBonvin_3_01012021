@@ -1,0 +1,80 @@
+
+.inputBox{
+    display: flex;
+    justify-content: center;
+    background-color:darken($color-back, 10);
+    margin-top: 70px;
+
+    input{
+        width: 40%;
+        display: block;
+        padding: 15px 15px;
+        border: none;
+        background-color:darken($color-back, 10);
+        }
+        .localisation{
+            position: relative;
+            top: 17px;
+        }
+}
+
+
+.explorer{
+    text-align: center;
+    padding: 0 $gutter;
+    padding-top: 0;
+    padding-bottom: 50px;
+    background-color: $color-back;
+  
+     h2{
+        width: 80%;
+        margin: auto;
+        padding-top: 40px;
+    }
+     p{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }   
+}
+
+.fonctionnement{
+    padding: 50px $gutter ;
+
+    h2{
+        padding-bottom: 25px;
+    }
+
+    &__card{
+        position: relative;
+        display: flex;
+        text-align: center;
+        background-color: $color-back;
+        border-radius: 25px;
+    }
+
+    &__para{
+        padding: 25px;
+        font-size: 1.1em;
+        font-weight: 400;
+
+    }
+    img{
+        top: 0;
+        left: 0;
+        font-weight: 100;
+        width: 15px;
+        padding-left: 40px;
+    }
+    .numero{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border-radius: 50%;
+        color: white;
+        background-color: $color-primary;
+    }
+   
+}
