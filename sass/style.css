@@ -48,15 +48,23 @@ table {
   border-spacing: 0;
 }
 
-h2 {
+body {
   font-family: roboto, sans-serif;
+}
+
+h2 {
   font-weight: 500;
   font-size: 1.7em;
   line-height: 1.2em;
 }
 
+h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
 p {
-  font-family: roboto, sans-serif;
   font-size: 1.2em;
   font-weight: 200;
   line-height: 1.2;
@@ -70,6 +78,11 @@ input {
   font-size: 1.1em;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .btn {
   background: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   color: white;
@@ -81,10 +94,12 @@ input {
 
 .topBar {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   height: 70px;
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.17);
+  background-color: white;
 }
 .topBar__fleche {
   position: absolute;
@@ -99,10 +114,38 @@ input {
   padding-top: 20px;
 }
 
+footer {
+  padding: 20px;
+  padding-bottom: 30px;
+  color: white;
+  background-color: #333333;
+}
+footer a {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 2;
+}
+footer h2 {
+  color: white;
+  font-family: Shrikhand, sans-serif;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+footer i {
+  position: relative;
+  width: 30px;
+}
+
 .inputBox {
   display: flex;
   justify-content: center;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
   margin-top: 70px;
 }
 .inputBox input {
@@ -110,7 +153,7 @@ input {
   display: block;
   padding: 15px 15px;
   border: none;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
 }
 .inputBox .localisation {
   position: relative;
@@ -136,16 +179,20 @@ input {
 
 .fonctionnement {
   padding: 50px 20px;
+  padding-bottom: 40px;
 }
 .fonctionnement h2 {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 .fonctionnement__card {
   position: relative;
   display: flex;
+  margin: 30px 0;
+  margin-left: 10px;
   text-align: center;
   background-color: #f2f2f2;
   border-radius: 25px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 .fonctionnement__para {
   padding: 25px;
@@ -155,20 +202,59 @@ input {
 .fonctionnement img {
   top: 0;
   left: 0;
-  font-weight: 100;
-  width: 15px;
-  padding-left: 40px;
+  width: 20px;
+  margin-left: 45px;
 }
 .fonctionnement .numero {
   width: 25px;
   height: 25px;
   line-height: 25px;
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 23px;
+  left: -12.5px;
   border-radius: 50%;
   color: white;
   background-color: #9356DC;
+}
+
+.indexRestaurant {
+  background-color: #f2f2f2;
+  padding: 0px 20px;
+  padding-bottom: 50px;
+}
+.indexRestaurant__card {
+  display: block;
+  margin: 20px 0;
+}
+.indexRestaurant__wrapperImage {
+  overflow: hidden;
+  width: 100%;
+  height: 170px;
+  border-radius: 20px 20px 0 0;
+}
+.indexRestaurant h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.indexRestaurant__explication {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-radius: 0 0 20px 20px;
+  background-color: white;
+}
+.indexRestaurant__explication__col1 {
+  padding-left: 15px;
+}
+.indexRestaurant__explication__col2 {
+  padding-right: 15px;
+}
+.indexRestaurant__explication .coeur {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
