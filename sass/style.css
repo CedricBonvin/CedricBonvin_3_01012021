@@ -84,6 +84,78 @@ a {
   cursor: pointer;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: loading 2s;
+}
+.loader__wrapper {
+  width: 250px;
+  height: 10px;
+  margin: 20px;
+  padding: 2px;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+.loader__bar {
+  width: 100%;
+  height: 100%;
+  background: #ff79da;
+  border-radius: 15px;
+  transform-origin: left;
+  animation: progression 2s;
+}
+
+.indexPage {
+  opacity: 1;
+  animation: pageAppear 2s;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes pageAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes progression {
+  0% {
+    transform: scaleX(0);
+  }
+  40% {
+    transform: scaleX(0.3);
+  }
+  60% {
+    transform: scaleX(0.8);
+  }
+  80% {
+    transform: scaleX(0.9);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .btn {
   background: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   color: white;
@@ -182,7 +254,7 @@ a {
 
 .topBar {
   position: fixed;
-  z-index: 1;
+  z-index: 15;
   top: 0;
   width: 100%;
   height: 70px;
@@ -199,7 +271,7 @@ a {
 .topBar__logo {
   display: block;
   margin: auto;
-  width: 45%;
+  width: 180px;
   padding-top: 25px;
 }
 
@@ -241,8 +313,7 @@ footer i {
   background-color: #e5e5e5;
 }
 .inputBox .localisation {
-  position: relative;
-  top: 17px;
+  padding: 15px 0;
 }
 
 /* ----   EXPLORER ----*/
