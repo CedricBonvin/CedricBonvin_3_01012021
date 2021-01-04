@@ -12,12 +12,13 @@
         border: none;
         background-color:darken($color-back, 5);
     }
-        .localisation{
-            position: relative;
-            top: 17px;
-        }
+    .localisation{
+        position: relative;
+        top: 17px;
+    }
 }
 
+/* ----   EXPLORER ----*/
 
 .explorer{
     text-align: center;
@@ -37,6 +38,8 @@
     }   
 }
 
+/* -----  FONCTIONNEMENT ----*/
+
 .fonctionnement{
     padding: 50px $gutter ;
     padding-bottom: 40px;
@@ -46,32 +49,41 @@
     }
 
     &__card{
+        display: flex; 
+        align-items: center;
         position: relative;
-        display: flex;
+        padding: 25px 0;
         margin: 30px 0;
         margin-left: 10px;
-        text-align: center;
         background-color: $color-back;
         border-radius: 25px;
         box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
     }
-    &__para{
-        padding: 25px;
-        font-size: 1.1em;
-        font-weight: 400;
+   
+    p{
+        font-size: 1em;
+        font-weight: 500;
     }
-    img{
-        top: 0;
-        left: 0;
-        width: 20px;
-        margin-left: 45px;     
+    i{   
+        padding-left: 40px;
+        padding-right: 20px;
+        position: relative;
+        text-align: center;
+        color: darken($color-back,50);
+        font-size: 1.1em;
+
+    }
+    .mobile{
+       font-size: 1.5em;
     }
     .numero{
+        text-align: center;
         width: 25px;
         height: 25px;      
         line-height: 25px;
         position: absolute;
-        top: 23px;
+        top: 50%;
+        transform: translateY(-50%);
         left: -12.5px;
         border-radius: 50%;
         color: white;
@@ -79,30 +91,38 @@
     } 
 }
 
+/* ---- RESTURANT ----*/
+
 .indexRestaurant{
     background-color: $color-back;
     padding: 0px $gutter;
     padding-bottom: 50px;
 
     &__card{
+        position: relative;
         display: block;
         margin: 20px 0;
     }
-
-
-    &__wrapperImage{
-        overflow: hidden;
+    .nouveau{
+        position: absolute;
+        right: 15px;
+        top:20px;
+        padding: 6px 10px;
+        background:$color-tertiary;
+        color: darken($color-tertiary,40);
+        border-radius: 2px;
+    }
+    img{
         width: 100%;
         height: 170px;
+        object-position: center center;
+        object-fit: cover;
         border-radius: 20px 20px 0 0;
     }
-
     h2{
         padding-top: 50px;
         padding-bottom: 20px;
     }
- 
-
     &__explication{
         position: relative;
         display: flex;
@@ -125,5 +145,4 @@
         }
     }
 }
-
 

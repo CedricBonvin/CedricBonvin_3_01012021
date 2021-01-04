@@ -81,6 +81,7 @@ input {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .btn {
@@ -90,6 +91,93 @@ a {
   border-radius: 50px;
   border: none;
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.17);
+}
+.btn__commander {
+  display: block;
+  padding: 17px 60px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.cardPlat {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  padding: 13px 10px;
+  margin: 17px 0;
+  line-height: 1.7;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 3px #e5e5e5;
+}
+.cardPlat:hover > .wrapperCheck {
+  transform: translateX(0);
+}
+.cardPlat:hover > .prix {
+  transform: translateX(-60px);
+}
+.cardPlat:hover > .wrapperCheck i {
+  transform: rotate(1turn);
+}
+.cardPlat:hover > .cardPlat__col1 p {
+  width: calc(100% - (60px));
+}
+.cardPlat:hover > .cardPlat__col1 h4 {
+  width: calc(100% - (60px));
+}
+.cardPlat__col1 {
+  width: 90%;
+}
+.cardPlat h4 {
+  font-size: 1.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  transition: 2s;
+}
+.cardPlat p {
+  width: 100%;
+  font-size: 0.9em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: 2s;
+  font-weight: 300;
+}
+.cardPlat .prix {
+  position: relative;
+  top: 28px;
+  width: 10%;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.2;
+  transition: 2s;
+}
+.cardPlat .wrapperCheck {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  background-color: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  transform: translateX(100%);
+  transition: 2s;
+}
+.cardPlat .wrapperCheck i {
+  position: relative;
+  font-size: 1.6em;
+  color: white;
+  transform: rotate(0.5turn);
+  transition: 2s 0s;
 }
 
 .topBar {
@@ -111,7 +199,8 @@ a {
 .topBar__logo {
   display: block;
   margin: auto;
-  padding-top: 20px;
+  width: 45%;
+  padding-top: 25px;
 }
 
 footer {
@@ -120,22 +209,18 @@ footer {
   color: white;
   background-color: #333333;
 }
-footer a {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 2;
-}
 footer h2 {
   color: white;
   font-family: Shrikhand, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.15em;
   padding-bottom: 15px;
 }
+footer li {
+  padding: 5px 0;
+}
 footer a {
-  display: inline-block;
-  text-decoration: none;
   color: white;
-  cursor: pointer;
+  font-weight: 400;
 }
 footer i {
   position: relative;
@@ -160,6 +245,7 @@ footer i {
   top: 17px;
 }
 
+/* ----   EXPLORER ----*/
 .explorer {
   text-align: center;
   padding: 0 20px;
@@ -177,6 +263,7 @@ footer i {
   padding-bottom: 30px;
 }
 
+/* -----  FONCTIONNEMENT ----*/
 .fonctionnement {
   padding: 50px 20px;
   padding-bottom: 40px;
@@ -185,51 +272,70 @@ footer i {
   padding-bottom: 20px;
 }
 .fonctionnement__card {
-  position: relative;
   display: flex;
+  align-items: center;
+  position: relative;
+  padding: 25px 0;
   margin: 30px 0;
   margin-left: 10px;
-  text-align: center;
   background-color: #f2f2f2;
   border-radius: 25px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
-.fonctionnement__para {
-  padding: 25px;
-  font-size: 1.1em;
-  font-weight: 400;
+.fonctionnement p {
+  font-size: 1em;
+  font-weight: 500;
 }
-.fonctionnement img {
-  top: 0;
-  left: 0;
-  width: 20px;
-  margin-left: 45px;
+.fonctionnement i {
+  padding-left: 40px;
+  padding-right: 20px;
+  position: relative;
+  text-align: center;
+  color: #737373;
+  font-size: 1.1em;
+}
+.fonctionnement .mobile {
+  font-size: 1.5em;
 }
 .fonctionnement .numero {
+  text-align: center;
   width: 25px;
   height: 25px;
   line-height: 25px;
   position: absolute;
-  top: 23px;
+  top: 50%;
+  transform: translateY(-50%);
   left: -12.5px;
   border-radius: 50%;
   color: white;
   background-color: #9356DC;
 }
 
+/* ---- RESTURANT ----*/
 .indexRestaurant {
   background-color: #f2f2f2;
   padding: 0px 20px;
   padding-bottom: 50px;
 }
 .indexRestaurant__card {
+  position: relative;
   display: block;
   margin: 20px 0;
 }
-.indexRestaurant__wrapperImage {
-  overflow: hidden;
+.indexRestaurant .nouveau {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  padding: 6px 10px;
+  background: #99e2d0;
+  color: #278870;
+  border-radius: 2px;
+}
+.indexRestaurant img {
   width: 100%;
   height: 170px;
+  object-position: center center;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 .indexRestaurant h2 {
@@ -255,6 +361,51 @@ footer i {
   top: 20px;
   right: 20px;
   font-size: 2em;
+}
+
+.imageTop {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  object-position: cover;
+}
+
+.wrapperBase {
+  position: relative;
+  background: #f2f2f2;
+  border-radius: 50px 50px 0 0;
+  margin-top: -140px;
+  z-index: 2;
+  padding: 0 20px;
+  padding-bottom: 80px;
+}
+.wrapperBase__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  padding-bottom: 0px;
+}
+.wrapperBase .coeur {
+  font-size: 1.8em;
+  padding-right: 20px;
+}
+.wrapperBase h2 {
+  font-family: shrikhand, sans-serif;
+  font-size: 1.7em;
+}
+.wrapperBase h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.1em;
+  padding-bottom: 0px;
+  margin-top: 40px;
+}
+.wrapperBase h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: solid 3px #99e2d0;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
