@@ -6,9 +6,9 @@
     overflow: hidden;
 
     width: 100%;
-    padding: 13px 10px;
+    padding: 10px 10px;
     margin: 17px 0;
-    line-height: 1.7;
+    line-height: 1.6;
 
     
     background-color: white;
@@ -26,14 +26,13 @@
         transform: rotate(1turn);
     }
     &:hover > .cardPlat__col1 p{
-       width: calc(100% - (60px));
+       width: calc(100% - (70px));
 
     }
     &:hover > .cardPlat__col1 h4{
-        width: calc(100% - (60px));
+        width: calc(100% - (70px));
  
      }
-
     &__col1{
         width: 90%;
     }
@@ -45,7 +44,7 @@
         white-space: nowrap;        
         text-overflow: ellipsis;
         width: 100%;
-        transition: 2s;
+        transition: .5s;
 
     }
     p{
@@ -54,19 +53,19 @@
         overflow: hidden;
         white-space: nowrap;        
         text-overflow: ellipsis;
-        transition: 2s;
         font-weight: 300;
+        transition: .5s;
     }
     
  
     .prix{
         position: relative;
-        top: 28px;
+        top: 29px;
         width: 10%;
         font-size: 1em;
         text-align: center;
         line-height: 1.2;
-        transition: 2s;
+        transition: .5s;
     }
     .wrapperCheck{
         position:absolute;
@@ -82,14 +81,14 @@
         background-color: $color-tertiary;
         border-radius: 0 20px 20px 0;
         transform: translateX(100%);
-        transition: 2s;
+        transition: .5s;
 
         i{
             position: relative;
             font-size: 1.6em;
             color: white;
-            transform: rotate(0.5turn);
-            transition: 2s 0s;
+            transform: rotate(-1turn);
+            transition: .5s ;
         }
     }
 }
