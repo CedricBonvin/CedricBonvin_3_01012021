@@ -3,14 +3,19 @@
     position: relative;
     z-index: -1;
     width: 100%;
-    object-position: cover;
+    margin-top: 70px;
+    &__noteEnchantee{
+        margin-top: -30px;
+        margin-bottom: -100px;
+    }
 }
+
 
 .wrapperBase{
     position: relative;
     background: $color-back;
     border-radius: 50px 50px 0 0;
-    margin-top: -140px;
+    margin-top: -50px;
     z-index: 2;
     padding: 0 $gutter ;
     padding-bottom: 80px;

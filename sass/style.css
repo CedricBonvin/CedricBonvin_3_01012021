@@ -219,10 +219,10 @@ a {
   transform: rotate(1turn);
 }
 .cardPlat:hover > .cardPlat__col1 p {
-  width: calc(100% - (70px));
+  width: calc(100% - (90px));
 }
 .cardPlat:hover > .cardPlat__col1 h4 {
-  width: calc(100% - (70px));
+  width: calc(100% - (90px));
 }
 .cardPlat__col1 {
   width: 90%;
@@ -475,14 +475,18 @@ footer i {
   position: relative;
   z-index: -1;
   width: 100%;
-  object-position: cover;
+  margin-top: 70px;
+}
+.imageTop__noteEnchantee {
+  margin-top: -30px;
+  margin-bottom: -100px;
 }
 
 .wrapperBase {
   position: relative;
   background: #f2f2f2;
   border-radius: 50px 50px 0 0;
-  margin-top: -140px;
+  margin-top: -50px;
   z-index: 2;
   padding: 0 20px;
   padding-bottom: 80px;
