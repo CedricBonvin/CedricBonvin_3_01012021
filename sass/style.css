@@ -176,6 +176,60 @@ a {
   opacity: 0;
 }
 
+.cardPlat {
+  opacity: 0;
+}
+
+@keyframes cardAppear {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.cardPlat__appear-1 {
+  animation: cardAppear 1s 0.2s forwards;
+}
+
+.cardPlat__appear-2 {
+  animation: cardAppear 1s 0.4s forwards;
+}
+
+.cardPlat__appear-3 {
+  animation: cardAppear 1s 0.6s forwards;
+}
+
+.cardPlat__appear-4 {
+  animation: cardAppear 1s 0.8s forwards;
+}
+
+.cardPlat__appear-5 {
+  animation: cardAppear 1s 1s forwards;
+}
+
+.cardPlat__appear-6 {
+  animation: cardAppear 1s 1.2s forwards;
+}
+
+.cardPlat__appear-7 {
+  animation: cardAppear 1s 1.4s forwards;
+}
+
+.cardPlat__appear-8 {
+  animation: cardAppear 1s 1.6s forwards;
+}
+
+.cardPlat__appear-9 {
+  animation: cardAppear 1s 1.8s forwards;
+}
+
+.cardPlat__appear-10 {
+  animation: cardAppear 1s 2s forwards;
+}
+
 .btn {
   background: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   color: white;
