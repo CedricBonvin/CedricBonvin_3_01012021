@@ -1,4 +1,5 @@
 
+@import "./utils/mixin.scss";
 
 @import "./base/reset.scss";
 @import "./base/typo.scss";
@@ -9,7 +10,7 @@
 @import "./utils/animation-cardAppear.scss";
 
 @import "./component/button.scss";
-@import "./component/cards.scss";
+@import "./component/cards-plats.scss";
 
 
 
@@ -18,3 +19,4 @@
 
 @import "./pages/index.scss";
 @import "./pages/restaurants.scss";
+

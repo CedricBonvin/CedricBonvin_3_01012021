@@ -1,6 +1,14 @@
 
 body{
+    @include tablette{
+        max-width: 1200px;
+        margin: auto;
+        box-shadow: 0 0 50px 10px rgb(180, 176, 176);
+    }  
+} 
+body{
     font-family: roboto, sans-serif;
+    
 }
 h2 {
     font-weight: 500;
@@ -26,4 +34,5 @@ a{
     color: inherit;
     cursor: pointer;
 }
+
 

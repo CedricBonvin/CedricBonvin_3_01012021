@@ -11,6 +11,11 @@
         padding: 15px 15px;
         border: none;
         background-color:darken($color-back, 5);
+        @include tablette{
+            background-color:darken($color-back, 10);
+            text-align: center;
+            width: 370px;
+        }
     }
     .localisation{
        padding: 15px 0;
@@ -42,9 +47,19 @@
 .fonctionnement{
     padding: 50px $gutter ;
     padding-bottom: 40px;
+    @include tablette{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+        
+    }
 
     h2{
         padding-bottom: 20px;
+        @include tablette{
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__card{
@@ -62,13 +77,20 @@
             background: lighten($color-primary,35);
         }
         &:hover > i{
-        color: $color-primary        }
+        color: $color-primary   
+         }
+         @include tablette{
+             max-width: 370px;
+         }
 
     }
    
     p{
         font-size: 1em;
         font-weight: 500;
+        @include tablette{
+            padding-right: 15px;
+        }
     }
     i{   
         padding-left: 40px;
@@ -103,11 +125,22 @@
     background-color: $color-back;
     padding: 0px $gutter;
     padding-bottom: 50px;
+    @include tablette{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+    }
 
     &__card{
         position: relative;
         display: block;
-        margin: 20px 0;
+        margin: 20px auto;
+        max-width: 370px;
+        @include tablette {
+            max-width: 370px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
     .nouveau{
         position: absolute;
@@ -127,6 +160,9 @@
     h2{
         padding-top: 50px;
         padding-bottom: 20px;
+        @include tablette{
+            width: 100%;
+        }
     }
     p{
         font-size: 1.15em;

@@ -1,14 +1,18 @@
 
+
 .imageTop{
     position: relative;
     z-index: -1;
     width: 100%;
     margin-top: 70px;
-    &__noteEnchantee{
-        margin-top: -30px;
-        margin-bottom: -100px;
+   
+    @include tablette{
+        height: calc(100vh);
+        margin-top: 0;
+        object-fit: cover;
     }
 }
+
 
 
 .wrapperBase{
@@ -19,12 +23,17 @@
     z-index: 2;
     padding: 0 $gutter ;
     padding-bottom: 80px;
+    
 
     &__title{
         display: flex;
         justify-content: space-between;
         padding: 40px 0;
         padding-bottom: 0px;
+        @include tablette{
+            width: 500px;
+            margin: auto;
+        }
     }
     .coeurBox{
         font-size: 1.1em;
@@ -45,6 +54,13 @@
         font-size: 1.1em;
         padding-bottom: 0px;
         margin-top: 40px;
+        @include tablette{
+            max-width: 500px;
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
     }
     h3::after{
         content: "";

@@ -15,9 +15,6 @@
 }
 
 
-
-
-
 @for $i from 1 through 10 {
     .cardPlat__appear-#{$i}{
      animation: cardAppear  1s  .2s * $i  forwards;

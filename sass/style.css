@@ -49,6 +49,14 @@ table {
   border-spacing: 0;
 }
 
+@media (min-width: 600px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 50px 10px #b4b0b0;
+  }
+}
+
 body {
   font-family: roboto, sans-serif;
 }
@@ -85,16 +93,17 @@ a {
 .loader {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 20;
   height: 100vh;
   width: 100%;
-  background-color: #fff;
+  background-color: white;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   animation: loading 2s;
 }
 .loader__wrapper {
@@ -123,10 +132,12 @@ a {
   0% {
     transform: translateX(0);
     opacity: 1;
+    width: 100%;
   }
   100% {
     transform: translateX(0);
     opacity: 1;
+    width: 100%;
   }
 }
 @keyframes pageAppear {
@@ -263,6 +274,12 @@ a {
   border-radius: 20px;
   box-shadow: 0 0 10px 3px #e5e5e5;
 }
+@media (min-width: 600px) {
+  .cardPlat {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+}
 .cardPlat:hover > .wrapperCheck {
   transform: translateX(0);
 }
@@ -334,10 +351,18 @@ a {
   position: fixed;
   z-index: 15;
   top: 0;
+  left: 0;
   width: 100%;
   height: 70px;
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.17);
   background-color: white;
+}
+@media (min-width: 600px) {
+  .topBar {
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .topBar__fleche {
   position: absolute;
@@ -365,8 +390,19 @@ footer h2 {
   font-size: 1.15em;
   padding-bottom: 15px;
 }
+@media (min-width: 600px) {
+  footer h2 {
+    text-align: center;
+  }
+}
 footer li {
+  display: block;
   padding: 5px 0;
+}
+@media (min-width: 600px) {
+  footer li {
+    text-align: center;
+  }
 }
 footer a {
   color: white;
@@ -389,6 +425,13 @@ footer i {
   padding: 15px 15px;
   border: none;
   background-color: #e5e5e5;
+}
+@media (min-width: 600px) {
+  .inputBox input {
+    background-color: #d9d9d9;
+    text-align: center;
+    width: 370px;
+  }
 }
 .inputBox .localisation {
   padding: 15px 0;
@@ -417,8 +460,21 @@ footer i {
   padding: 50px 20px;
   padding-bottom: 40px;
 }
+@media (min-width: 600px) {
+  .fonctionnement {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+}
 .fonctionnement h2 {
   padding-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .fonctionnement h2 {
+    width: 100%;
+    text-align: center;
+  }
 }
 .fonctionnement__card {
   display: flex;
@@ -437,9 +493,19 @@ footer i {
 .fonctionnement__card:hover > i {
   color: #9356DC;
 }
+@media (min-width: 600px) {
+  .fonctionnement__card {
+    max-width: 370px;
+  }
+}
 .fonctionnement p {
   font-size: 1em;
   font-weight: 500;
+}
+@media (min-width: 600px) {
+  .fonctionnement p {
+    padding-right: 15px;
+  }
 }
 .fonctionnement i {
   padding-left: 40px;
@@ -472,10 +538,25 @@ footer i {
   padding: 0px 20px;
   padding-bottom: 50px;
 }
+@media (min-width: 600px) {
+  .indexRestaurant {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+}
 .indexRestaurant__card {
   position: relative;
   display: block;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 370px;
+}
+@media (min-width: 600px) {
+  .indexRestaurant__card {
+    max-width: 370px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .indexRestaurant .nouveau {
   position: absolute;
@@ -495,6 +576,11 @@ footer i {
 .indexRestaurant h2 {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .indexRestaurant h2 {
+    width: 100%;
+  }
 }
 .indexRestaurant p {
   font-size: 1.15em;
@@ -531,9 +617,12 @@ footer i {
   width: 100%;
   margin-top: 70px;
 }
-.imageTop__noteEnchantee {
-  margin-top: -30px;
-  margin-bottom: -100px;
+@media (min-width: 600px) {
+  .imageTop {
+    height: calc(100vh);
+    margin-top: 0;
+    object-fit: cover;
+  }
 }
 
 .wrapperBase {
@@ -550,6 +639,12 @@ footer i {
   justify-content: space-between;
   padding: 40px 0;
   padding-bottom: 0px;
+}
+@media (min-width: 600px) {
+  .wrapperBase__title {
+    width: 500px;
+    margin: auto;
+  }
 }
 .wrapperBase .coeurBox {
   font-size: 1.1em;
@@ -569,6 +664,13 @@ footer i {
   font-size: 1.1em;
   padding-bottom: 0px;
   margin-top: 40px;
+}
+@media (min-width: 600px) {
+  .wrapperBase h3 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .wrapperBase h3::after {
   content: "";
