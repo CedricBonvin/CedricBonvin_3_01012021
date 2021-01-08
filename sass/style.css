@@ -665,11 +665,11 @@ footer i {
 .wrapperBase .coeurBox__coeur::after {
   background: #f2f2f2;
 }
-.wrapperBase h2 {
+.wrapperBase h1 {
   font-family: shrikhand, sans-serif;
   font-size: 1.7em;
 }
-.wrapperBase h3 {
+.wrapperBase h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.1em;
@@ -677,13 +677,13 @@ footer i {
   margin-top: 40px;
 }
 @media (min-width: 600px) {
-  .wrapperBase h3 {
+  .wrapperBase h2 {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-.wrapperBase h3::after {
+.wrapperBase h2::after {
   content: "";
   display: block;
   width: 45px;
