@@ -17,6 +17,7 @@
             width: 370px;
         }
     }
+    
     .localisation{
        padding: 15px 0;
     }
@@ -31,12 +32,13 @@
     padding-bottom: 50px;
     background-color: $color-back;
   
-     h2{
+    h2{
         width: 80%;
         margin: auto;
         padding-top: 40px;
     }
-     p{
+
+    p{
         padding-top: 20px;
         padding-bottom: 30px;
     }   
@@ -50,8 +52,7 @@
     @include tablette{
         display: flex;
         flex-flow: wrap;
-        justify-content: space-evenly;
-        
+        justify-content: space-evenly;        
     }
 
     h2{

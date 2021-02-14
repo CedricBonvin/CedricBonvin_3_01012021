@@ -1,4 +1,9 @@
 .fonctionnement__card{
+
+    @include tablette{
+        max-width: 370px;
+   }
+
     display: flex; 
     align-items: center;
     position: relative;
@@ -8,16 +13,16 @@
     background-color: $color-back;
     border-radius: 25px;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
 
     &:hover{
         background: lighten($color-primary,35);
     }
+
     &:hover > i{
     color: $color-primary   
-     }
-     @include tablette{
-         max-width: 370px;
-     }
+    }
+
     p{
         font-size: 1em;
         font-weight: 500;
@@ -25,6 +30,7 @@
             padding-right: 15px;
         }
     }
+
     i{   
         padding-left: 40px;
         padding-right: 20px;
@@ -32,11 +38,12 @@
         text-align: center;
         color: darken($color-back,50);
         font-size: 1.1em;
-
     }
+
     .mobile{
         font-size: 1.5em;
     }
+
     .numero{
         position: absolute;
         top: 50%;

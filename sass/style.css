@@ -248,6 +248,7 @@ a {
   border-radius: 50px;
   border: none;
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.17);
+  cursor: pointer;
 }
 .btn:hover {
   opacity: 0.9;
@@ -292,15 +293,16 @@ a {
 .cardPlat:hover > .cardPlat__col1 p {
   width: calc(100% - (90px));
 }
-.cardPlat:hover > .cardPlat__col1 h4 {
+.cardPlat:hover > .cardPlat__col1 h3 {
   width: calc(100% - (90px));
 }
 .cardPlat__col1 {
   width: 90%;
 }
-.cardPlat h4 {
+.cardPlat h3 {
   font-size: 1.1em;
   overflow: hidden;
+  font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
@@ -357,17 +359,18 @@ a {
   background-color: #f2f2f2;
   border-radius: 25px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .fonctionnement__card {
+    max-width: 370px;
+  }
 }
 .fonctionnement__card:hover {
   background: #f2eafb;
 }
 .fonctionnement__card:hover > i {
   color: #9356DC;
-}
-@media (min-width: 600px) {
-  .fonctionnement__card {
-    max-width: 370px;
-  }
 }
 .fonctionnement__card p {
   font-size: 1em;
@@ -634,6 +637,11 @@ footer i {
     margin-top: 0;
     object-fit: cover;
   }
+}
+.imageTop__noteEnchantee {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .wrapperBase {
